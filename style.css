@@ -1,0 +1,141 @@
+@@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
+html, body, h3 {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+header {
+  padding: 2em;
+}
+
+header, aside {
+  background-color: rgba(188, 220, 225, 0.5);
+  padding: 5em;
+}
+
+section, footer {
+  padding: 0.1em;
+}
+
+h1, h3 {
+  font-family: 'PT Sans';
+  margin: 0;
+  padding: 0;
+}
+h1, .tagline {
+  color: #47a;
+  font-size: 200%;
+}
+
+section {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  padding-bottom: .2em;
+}
+
+.tip {
+  background-color: #47a;
+  color: #fff;
+  font-size: 3em;
+  width: 1.2em;
+  text-align: right;
+  padding:.2em;
+}
+
+section img {
+  max-width: 100%;
+}
+
+article {
+  padding: 1em;
+}
+
+aside {
+  background-color: #47a;
+  padding: 2em;
+  color: #fff;
+}
+
+aside a{
+  text-decoration: none;
+  background-color: #47a;
+  padding: 2em;
+  display: block;
+}
+
+aside a:hover {
+  background-color: #47a;
+  padding: 2em;
+}
+
+aside ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  background-color: #333;
+  color: #eee;
+  padding: 2em;
+}
+
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "kop kop"
+  "t1 t2"
+  "t3 t4"
+  "t3 t5"
+  "afb t6"
+  "t8 aside"
+  "t9 aside"
+  "t10 aside"
+  "voet voet";
+}
+}
+
+header {grid-area: kop;}
+.voordeel {grid-area: t1:}
+.jezelf {grid-area: t2:}
+.spontaan {grid-area: t3:}
+.geluk {grid-area: t4:}
+.maakTijd {grid-area: t5:}
+.accepteer {grid-area: t6:}
+.doel {grid-area: t7:}
+.zeg {grid-area: t8:}
+.interesse {grid-area: t9:}
+.passie {grid-area: t10:}
+aside {grid-area: aside;}
+footer {grid-area: voet;}
+
+.voordeel_article {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media screen and (min-width:1000px) {
+  body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "kop kop"
+    "t1 t2"
+    "t3 t4"
+    "t3 t5"
+    "afb t6"
+    "t8 aside"
+    "t9 aside"
+    "t10 aside"
+    "aside voet voet";
+  }
+}
+
+#validatie img {
+    height: 2em;
+    width: auto;
+    border: 0;
+    margin: 0 .3em;
+}
